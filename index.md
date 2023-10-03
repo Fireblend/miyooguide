@@ -1,35 +1,30 @@
 ---
 title: Home
 layout: home
+nav_order: 1
 ---
 
-This is a *bare-minimum* template to create a Jekyll site that uses the [Just the Docs] theme. You can easily set the created site to be published on [GitHub Pages] – the [README] file explains how to do that, along with other details.
+# The No-Nonsense Miyoo Mini Guide
 
-If [Jekyll] is installed on your computer, you can also build and preview the created site *locally*. This lets you test changes before committing them, and avoids waiting for GitHub Pages.[^1] And you will be able to deploy your local build to a different platform than GitHub Pages.
+This guide will walk you through setting up your new Miyoo Mini Plus from scratch, filling it with ROMs and start playing in record time. This guide assumes you don’t have a ROM collection and that you will use the Tiny Best Set: Go! romset (also referred to as TBS in this document) as a starting point for games.
 
-More specifically, the created site:
+{: .warning }
+It is recommended you Google the “Tiny Best Set” Internet Archive page for details. 
+**This document has no links to pirated content.**
 
-- uses a gem-based approach, i.e. uses a `Gemfile` and loads the `just-the-docs` gem
-- uses the [GitHub Pages / Actions workflow] to build and publish the site on GitHub Pages
+{: .note }
+> This guide makes extensive use of the Onion Wiki content, the TBS documentation and other MM setup guides.
 
-Other than that, you're free to customize sites that you create with this template, however you like. You can easily change the versions of `just-the-docs` and Jekyll it uses, as well as adding further plugins.
+## Quick FAQ:
+### What is Onion?
+From the [Onion GitHub Page](https://github.com/OnionUI/Onion): An enhanced operating system for your Miyoo Mini, featuring fine-tuned emulation with 100+ built-in emulators, auto-save and resume, a wealth of customization options, and much more. Performant, reliable, and straightforward retro gaming right in your pocket. [See official website for more details](https://onionui.github.io/).
 
-[Browse our documentation][Just the Docs] to learn more about how to use this theme.
+### What is Tiny Best Set: GO?
+Tiny Best Set: GO! Is a hand-curated set of games for the Miyoo Mini (running Onion). Optional preview images are included for each game and all necessary bios and configuration files are also included. You should be able to drag-and-drop everything on an SD card with a freshly installed version of Onion. I can’t link to it here due to it containing pirated content, but it’s easy enough to find [if you search](https://www.google.com/).
 
-To get started with creating a site, simply:
+### Why do all this? Can’t I just stick with what came with my device?
+The Miyoo Mini Plus is a fantastic device, however its out of the box experience is far from optimal. To begin with, the stock SD card it comes with is cheap trash that will sooner or later (very likely sooner) get corrupted and fail, the ROMs it includes are often riddled with issues and will freeze or not launch, and the default OS, while usable, doesn’t really maximize the capabilities of the hardware - Onion is a much more fully featured experience that really squeezes every drop of performance out of the device. So following this guide is very much worth it!
 
-1. click "[use this template]" to create a GitHub repository
-2. go to Settings > Pages > Build and deployment > Source, and select GitHub Actions
+Go to [Start Here](http://miyooguide.fireblend.com/docs/Installing%20Onion/Start%20Here.html) to get started!
 
-If you want to maintain your docs in the `docs` directory of an existing project repo, see [Hosting your docs from an existing project repo](https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md#hosting-your-docs-from-an-existing-project-repo) in the template README.
-
-----
-
-[^1]: [It can take up to 10 minutes for changes to your site to publish after you push the changes to GitHub](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll#creating-your-site).
-
-[Just the Docs]: https://just-the-docs.github.io/just-the-docs/
-[GitHub Pages]: https://docs.github.com/en/pages
-[README]: https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md
-[Jekyll]: https://jekyllrb.com
-[GitHub Pages / Actions workflow]: https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/
-[use this template]: https://github.com/just-the-docs/just-the-docs-template/generate
+Or, if you've already setup your device, check out the [FAQ and Tips section](http://miyooguide.fireblend.com/docs/FAQ.html)!
