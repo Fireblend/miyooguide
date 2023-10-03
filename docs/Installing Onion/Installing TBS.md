@@ -4,7 +4,11 @@ layout: default
 nav_order: 5
 parent: Start Here
 ---
-# Install The Tiny Best Set
+# Install Tiny Best Set: GO!
+
+{: .note }
+It is recommended you download and install either the Tiny Best Set or the Done Set if you don't already have a ROM collection. As these sets share many of their games, don't install both or you might end up with multiple duplicate entries.
+
 1. Download TBS. Again, I recommend **grabbing the torrent file and opening it through a client** like [qbittorrent](https://www.qbittorrent.org/download) to download the set. The TBS contains several files inside, you can pick which to download before starting the download. The main ones you want are:
 
 ## TBS Base package:

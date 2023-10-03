@@ -28,10 +28,9 @@ You can just drop individual ROM files inside the right folder. So if you want t
 
 * If you have a `miyoogamelist.xml` file in a console folder (i.e. `/Roms/GBA`), that may prevent new ROMs you added from showing up in the list. Try renaming or removing it and trying again. See [here](https://github.com/OnionUI/Onion/wiki/Frequently-Asked-Questions-%28FAQ%29#how-can-i-use-a-miyoogamelistxml-to-customise-game-names) for more details on that file.
 
-## Fixing Arcade ROMs
-Some of the Arcade roms included in the Tiny Best Set romset will not work with the default core included with Onion. In order to fix them, download and install the Arcade Fix in the same way you did for the TBS. There’s a link to the Arcade Fix in the same Internet Archive page from which the TBS is downloaded.
-
 ## Enabling Rewinding
+(If you previously installed Done Set, this setting might already be enabled)
+
 Some consoles need to have rewinding enabled before you can use it. Press `Select`+`Menu` to bring up the RetroArch menu, select `Rewind` and toggle on `Rewind Support`. I recommend modifying how often each state is created (`Rewind Frames`) to every 20 frames or so.
 
 To save this at the Core/Emulator level, press `B` to get back to the main menu, then select `Overrides`, then select `Save Core Overrides`.
@@ -48,6 +47,7 @@ To save this at the Core/Emulator level, press `B` twice to get back to the main
 To just save this setting for a single game select `Save Game Overrides` instead of the above and it will only apply to the game you're currently playing.
 
 ## Disabling Save Slot Auto-Increment
+(If you previously installed Done Set, this setting might already be enabled)
 
 Some people dislike how Onion auto increments the save slot by default everytime a quick save is performed, keeping up to the 10 most recent saves. Follow the steps below to disable this:
 
@@ -56,7 +56,7 @@ From the Onion main menu, go into `Apps` > `RetroArch`, select `Saving` and togg
 If you followed the steps above it might come in handy to know you can switch the active slot in the middle of a game by pressing `Menu`+`Left` and `Menu`+`Right` on the D-Pad. This will decrease and increase the current slot by 1 respectively, and will decide what slot gets used when quick saving and loading.
 
 ## Transferring Save-States and Save Files To/From Other Devices
-You can transfer your save states and save files to and from other devices just by managing the `/Saves/CurrentProfile/saves/` (for regular in-game saves) and `/Saves/CurrentProfile/states/` (for save states) directories. As long as you’re using the same RetroArch core on your other device, or a core that uses the same save/state format, you can resume games started on your Miyoo, PC or other device in another without any issue. It might also be a good idea to regularly back these directories up. Remember RetroArch names these files the same as the ROMs, so make sure the names match so RA can recognize them.
+You can transfer your save states and save files to and from other devices just by managing the `/Saves/CurrentProfile/saves/` (for regular in-game saves) and `/Saves/CurrentProfile/states/` (for save states) directories. As long as you’re using the same RetroArch core on your other device, or a core that uses the same save/state format, and the filenames match between rom and save, you can resume games started on your Miyoo, PC or other device in another without any issue. It might also be a good idea to regularly back these directories up. Remember RetroArch names these files the same as the ROMs, so make sure the names match so RA can recognize them.
 
 ## Adjust Vibration Intensity
 You can adjust the intensity of in-game rumble by going into `Apps` > `RetroArch`, then selecting `Settings` > `Input` > `Haptic Feedback/Vibration` and setting the `Vibration Strength` value to the desired value. To make this change permanent, press `B` twice, go into `Configuration File` and press `Save Current Configuration`.
@@ -81,7 +81,7 @@ You can find prepatched ROMs for some of the more popular romhacks if you know w
 However, it's also common to find them as patch files (such as the ones you can download from [romhacking.net](https://www.romhacking.net/), with extensions such as `.ups`, `.ips`, etc). **These files need to be combined with a "clean ROM" in order to produce the modified ROM**, using a tool like [romhacking.net's online patcher](https://www.romhacking.net/patch/). Just provide the base ROM as well as the patch file, download the result and you're good to go!
 
 ## Tidying Up CD games (PSX, Sega CD, PCE-CD)
-If all your CD-ROM games come from the Tiny Best Set, then you’ll notice there’s usually only one `.ch`d file per game in the `PS`, `SEGACD` and `PCECD` directories. This may not be the case if you end up acquiring new ROMs, which tend to come in multiple files; one `.cue` and one or several `.bin` files. It’s strongly recommended to turn these files into one single .chd file, first of all because it’s tidier that way, and secondly these files are compressed and will use much less space than keeping the games as multiple files. To do so, you can use [CHDMAN](https://wiki.recalbox.com/en/tutorials/utilities/rom-conversion/chdman). Instructions in the link.
+If all your CD-ROM games come from Done Set, then you’ll notice there’s usually only one `.chd` file per game in the `PS` and `PCECD` directories. This may not be the case if you end up acquiring new ROMs, which tend to come in multiple files; one `.cue` and one or several `.bin` files. It’s strongly recommended to turn these files into one single .chd file, first of all because it’s tidier that way, and secondly these files are compressed and will use much less space than keeping the games as multiple files. To do so, you can use [CHDMAN](https://wiki.recalbox.com/en/tutorials/utilities/rom-conversion/chdman). Instructions in the link.
 
 ## Adding Onion Themes
 Add themes to your Onion installation by downloading them off of [the official theme repository](https://github.com/OnionUI/Themes), extracting them and placing them on the `Themes` directory in your SD Card's root, then going to `Apps` > `Theme Switcher` in Onion. More details at the repository link.
